@@ -24,24 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`trusty`, `nd14.04`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/trusty/Dockerfile)
--	[`trusty-non-free`, `nd14.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/trusty-non-free/Dockerfile)
--	[`xenial`, `nd16.04`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/xenial/Dockerfile)
--	[`xenial-non-free`, `nd16.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/xenial-non-free/Dockerfile)
--	[`bionic`, `nd18.04`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/bionic/Dockerfile)
--	[`bionic-non-free`, `nd18.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/bionic-non-free/Dockerfile)
--	[`focal`, `nd20.04`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/focal/Dockerfile)
--	[`focal-non-free`, `nd20.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/focal-non-free/Dockerfile)
--	[`jessie`, `nd80`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/jessie/Dockerfile)
--	[`jessie-non-free`, `nd80-non-free`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/jessie-non-free/Dockerfile)
--	[`stretch`, `nd90`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/stretch/Dockerfile)
--	[`stretch-non-free`, `nd90-non-free`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/stretch-non-free/Dockerfile)
--	[`buster`, `nd100`, `latest`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/buster/Dockerfile)
--	[`buster-non-free`, `nd100-non-free`, `non-free`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/buster-non-free/Dockerfile)
--	[`bullseye`, `nd110`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/bullseye/Dockerfile)
--	[`bullseye-non-free`, `nd110-non-free`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/bullseye-non-free/Dockerfile)
--	[`sid`, `nd`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/sid/Dockerfile)
--	[`sid-non-free`, `nd-non-free`](https://github.com/neurodebian/dockerfiles/blob/54ea480e6e3b2563e3e5dcd3df74ca3d280876e1/dockerfiles/sid-non-free/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
+
+[![winamd64/neurodebian build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/neurodebian.svg?label=winamd64/neurodebian%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/windows-amd64/job/neurodebian/)
 
 # Quick reference (cont.)
 
@@ -76,14 +61,14 @@ NeuroDebian images only add NeuroDebian repository and repository's GPG key. No 
 
 `nd` tags are used to reflect suffixes used in versions of packages available from NeuroDebian.
 
-The `neurodebian:latest` tag will always point the Neurodebian-enabled latest stable release of Debian (which is, at the time of this writing, `debian:wheezy`).
+The `winamd64/neurodebian:latest` tag will always point the Neurodebian-enabled latest stable release of Debian (which is, at the time of this writing, `debian:wheezy`).
 
 ## sources.list
 
 NeuroDebian APT file is installed under `/etc/apt/sources.list.d/neurodebian.sources.list` and currently enables only `main` (DFSG-compliant) area of the archive:
 
 ```console
-$ docker run neurodebian cat /etc/apt/sources.list.d/neurodebian.sources.list
+$ docker run winamd64/neurodebian cat /etc/apt/sources.list.d/neurodebian.sources.list
 deb http://neuro.debian.net/debian wheezy main
 deb http://neuro.debian.net/debian data main
 #deb-src http://neuro.debian.net/debian-devel wheezy main
