@@ -24,12 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.4.0-jdk8`, `6.4-jdk8`, `jdk8`, `6.4.0-jdk`, `6.4-jdk`, `jdk`, `6.4.0`, `6.4`, `latest`](https://github.com/keeganwitt/docker-gradle/blob/cef7b34da71a291cd4c2f6c1020d57c8457343db/jdk8/Dockerfile)
--	[`6.4.0-jre8`, `6.4-jre8`, `jre8`, `6.4.0-jre`, `6.4-jre`, `jre`](https://github.com/keeganwitt/docker-gradle/blob/cef7b34da71a291cd4c2f6c1020d57c8457343db/jre8/Dockerfile)
--	[`6.4.0-jdk11`, `6.4-jdk11`, `jdk11`](https://github.com/keeganwitt/docker-gradle/blob/cef7b34da71a291cd4c2f6c1020d57c8457343db/jdk11/Dockerfile)
--	[`6.4.0-jre11`, `6.4-jre11`, `jre11`](https://github.com/keeganwitt/docker-gradle/blob/cef7b34da71a291cd4c2f6c1020d57c8457343db/jre11/Dockerfile)
--	[`6.4.0-jdk14`, `6.4-jdk14`, `jdk14`](https://github.com/keeganwitt/docker-gradle/blob/cef7b34da71a291cd4c2f6c1020d57c8457343db/jdk14/Dockerfile)
--	[`6.4.0-jre14`, `6.4-jre14`, `jre14`](https://github.com/keeganwitt/docker-gradle/blob/cef7b34da71a291cd4c2f6c1020d57c8457343db/jre14/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
+
+[![arm32v6/gradle build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/gradle.svg?label=arm32v6/gradle%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/gradle/)
 
 # Quick reference (cont.)
 
@@ -62,7 +59,7 @@ WARNING:
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
+`docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project arm32v6/gradle gradle <gradle-task>`
 
 Note the above command runs using uid/gid 1000 (user *gradle*) to avoid running as root.
 
