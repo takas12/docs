@@ -30,9 +30,6 @@ WARNING:
 -	[`buster-curl`, `stable-curl`, `curl`](https://github.com/docker-library/buildpack-deps/blob/f84f6184d79f2cb7ab94c365ac4f47915e7ca2a8/debian/buster/curl/Dockerfile)
 -	[`buster-scm`, `stable-scm`, `scm`](https://github.com/docker-library/buildpack-deps/blob/f84f6184d79f2cb7ab94c365ac4f47915e7ca2a8/debian/buster/scm/Dockerfile)
 -	[`buster`, `stable`, `latest`](https://github.com/docker-library/buildpack-deps/blob/f84f6184d79f2cb7ab94c365ac4f47915e7ca2a8/debian/buster/Dockerfile)
--	[`jessie-curl`, `oldoldstable-curl`](https://github.com/docker-library/buildpack-deps/blob/f84f6184d79f2cb7ab94c365ac4f47915e7ca2a8/debian/jessie/curl/Dockerfile)
--	[`jessie-scm`, `oldoldstable-scm`](https://github.com/docker-library/buildpack-deps/blob/f84f6184d79f2cb7ab94c365ac4f47915e7ca2a8/debian/jessie/scm/Dockerfile)
--	[`jessie`, `oldoldstable`](https://github.com/docker-library/buildpack-deps/blob/f84f6184d79f2cb7ab94c365ac4f47915e7ca2a8/debian/jessie/Dockerfile)
 -	[`sid-curl`, `unstable-curl`](https://github.com/docker-library/buildpack-deps/blob/f84f6184d79f2cb7ab94c365ac4f47915e7ca2a8/debian/sid/curl/Dockerfile)
 -	[`sid-scm`, `unstable-scm`](https://github.com/docker-library/buildpack-deps/blob/f84f6184d79f2cb7ab94c365ac4f47915e7ca2a8/debian/sid/scm/Dockerfile)
 -	[`sid`, `unstable`](https://github.com/docker-library/buildpack-deps/blob/f84f6184d79f2cb7ab94c365ac4f47915e7ca2a8/debian/sid/Dockerfile)
@@ -54,6 +51,8 @@ WARNING:
 -	[`xenial-curl`, `16.04-curl`](https://github.com/docker-library/buildpack-deps/blob/f84f6184d79f2cb7ab94c365ac4f47915e7ca2a8/ubuntu/xenial/curl/Dockerfile)
 -	[`xenial-scm`, `16.04-scm`](https://github.com/docker-library/buildpack-deps/blob/f84f6184d79f2cb7ab94c365ac4f47915e7ca2a8/ubuntu/xenial/scm/Dockerfile)
 -	[`xenial`, `16.04`](https://github.com/docker-library/buildpack-deps/blob/f84f6184d79f2cb7ab94c365ac4f47915e7ca2a8/ubuntu/xenial/Dockerfile)
+
+[![ppc64le/buildpack-deps build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/buildpack-deps.svg?label=ppc64le/buildpack-deps%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/buildpack-deps/)
 
 # Quick reference (cont.)
 
